@@ -1,4 +1,7 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import '../styles/global.css'
+
 const pageTitle = "About Me";
 
 const identity = {
@@ -24,7 +27,7 @@ const skillColor = "darkslategray";
         <title>{pageTitle}</title>
         <style define:vars={{skillColor}}>
             h1 {
-                color: teal;
+                color:#d9b99b;
                 font-size: 4rem;
                 font-family: Helvetica;
             }
@@ -35,9 +38,7 @@ const skillColor = "darkslategray";
         </style>
     </head>
 <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
+    <Navigation />
 
     <h1>{pageTitle}</h1>
     <h2>... and this new project -- a personal website written in Astro</h2>
