@@ -1,6 +1,7 @@
 ---
-import '../styles/global.css'
-import Navigation from '../components/Navigation.astro';
+import '../styles/global.css';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 
 const pageTitle = "Igor's Astro Website";
 ---
@@ -12,8 +13,15 @@ const pageTitle = "Igor's Astro Website";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+
 	</head>
 	<body>
-		<Navigation />
+		<Header />
+		<Footer />
+		<script>
+			document.querySelector('.hamburger')?.addEventListener('click', () => {
+			  document.querySelector('.nav-links')?.classList.toggle('expanded');
+			});
+		  </script>
 	</body>
 </html>
