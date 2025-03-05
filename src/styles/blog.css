@@ -1,6 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+
+.montserrat-unique {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 120;
+  font-style: normal;
+}
+
+.montserrat-light {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+
+.sixtyfour-convergence-unique {
+  font-family: "Sixtyfour Convergence", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0,
+    "XELA" 0,
+    "YELA" 0;
+}
+
+
 html {
     background-color: #fff0db;
-    font-family: "Montserrat";
+    font-family: "Sixtyfour Convergence";
   }
   
   body {

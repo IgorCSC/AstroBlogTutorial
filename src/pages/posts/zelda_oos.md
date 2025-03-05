@@ -1,6 +1,7 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: Playing Through the Seasons'
-pubDate: 2025-28-02
+pubDate: 2025-02-08
 description: 'Reflections on replaying Oracle of Seasons.'
 author: 'Igor'
 image:
@@ -8,8 +9,6 @@ image:
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["videogames", "childhood", "parenthood"]
 ---
-
-## Playing Through the Seasons
 
 ### 1. It is dangerous to go alone. Take this.
 
@@ -55,7 +54,7 @@ tags: ["videogames", "childhood", "parenthood"]
 
 
 
-## 3. Open Your Eyes
+### 3. Open Your Eyes
 
 ​	At some point, I had this strange feeling -- it was more a feeling than an actual belief -- that if I didn't finish a task, if I left an item to do, time would not progress definitively and irreversibly. If I kept adding new chapters to the story, as Sheherazade to the Sultan, I wouldn't die and a new day would arise again and again. In a narrow sense, this is true. If I didn't finish the game, its world would be  always there as a possibility, expecting to be unveiled. If I progressed to the very end and defeated the final boss, on the other hand, the magic would vanish into the air. Even if I could replay, it would not be the same thing. The sense of _discovery_ would not exist anymore. Procrastinating on finishing things is, in some way, a manner of keeping the candle burning in a forgotten corner of the room.
 
