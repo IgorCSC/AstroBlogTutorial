@@ -1,9 +1,8 @@
 ---
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import '../styles/global.css';
-
-const pageTitle = "blog";
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BlogPost from '../components/BlogPost.astro';
+const pageTitle = "The blog";
+const allPosts = Object.values(import.meta.glob('../pages/posts/*.md', { eager: true }));
 ---
 
 <head>
@@ -11,14 +10,11 @@ const pageTitle = "blog";
 </head>
 
 <body>
-    <Header />
     <h1>{pageTitle}</h1>
     <p>I will post cool texts here.</p>
     <ul>
-        <li><a href="/posts/zelda_oos/">Zelda OOS</a></li>
-        <li><a href="/posts/post_2/">Post 2</a></li>
+        {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} pubDate={post.frontmatter.pubDate.slice(0,10)} /> )}
     </ul>
-    <Footer />
     <script>
         import "../scripts/menu.js";
     </script>
